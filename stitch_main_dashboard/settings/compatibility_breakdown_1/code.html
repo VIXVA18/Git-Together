@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Git-Connected Settings</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Fira+Code:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3713ec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#131022",
+              "panel-dark": "#1a1b26",
+              "text-light": "#333",
+              "text-dark": "#c0caf5",
+              "text-secondary-dark": "#a19db9",
+              "warning": "#e0af68",
+              "danger": "#f7768e",
+              "success": "#73daca",
+              "accent-blue": "#79e6f3",
+              "accent-purple": "#bb9af7",
+              "brand-green": "#2bb063"
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"],
+              "mono": ["Fira Code", "monospace"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<script defer="" src="../../sidebar.js"></script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark" data-page="stack">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<div class="flex h-full min-h-screen">
+<aside class="w-64 flex-shrink-0 bg-background-light dark:bg-panel-dark p-4 border-r border-gray-200/10 dark:border-white/10">
+<div class="flex h-full flex-col justify-between">
+<div class="flex flex-col gap-6">
+<div class="flex items-center gap-2 px-2 py-1">
+<h1 class="text-text-light dark:text-white text-xl font-bold font-mono tracking-tighter">&lt;Git Together&gt;</h1>
+</div>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/20 dark:bg-primary/30 text-primary dark:text-accent-blue" href="#">
+<span class="material-symbols-outlined">person</span>
+<p class="font-medium leading-normal">Profile</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-200/50 dark:hover:bg-white/10" href="#">
+<span class="material-symbols-outlined text-text-light dark:text-text-secondary-dark">travel_explore</span>
+<p class="text-text-light dark:text-text-secondary-dark font-medium leading-normal">Discovery</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-200/50 dark:hover:bg-white/10" href="#">
+<span class="material-symbols-outlined text-text-light dark:text-text-secondary-dark">lock</span>
+<p class="text-text-light dark:text-text-secondary-dark font-medium leading-normal">Account</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-200/50 dark:hover:bg-white/10" href="#">
+<span class="material-symbols-outlined text-text-light dark:text-text-secondary-dark">notifications</span>
+<p class="text-text-light dark:text-text-secondary-dark font-medium leading-normal">Notifications</p>
+</a>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-gray-200/50 dark:hover:bg-white/10" href="#">
+<span class="material-symbols-outlined text-text-light dark:text-text-secondary-dark">settings</span>
+<p class="text-text-light dark:text-text-secondary-dark font-medium leading-normal">Settings</p>
+</a>
+<div class="flex items-center gap-3 p-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar with a colorful abstract background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAKuLSAgovJesyHk6iDW4JZwaPQ3D5uVjK6j2ir-NQ9QcnK2yEBEApVX2Tj_iT35hMr4nTEO9AVLnQpsrlbF9KPEPdA-TU5kFTajzKbxaP2WMXTQpZ617zXYza0uyYC8ugmpKL9hzjSeFYhIXqR1xQSp_CaaPv172bSBNAONXD3Za70GLVgSWGnUjBk-7OctwNL4xzbiG9S2hJtQScrJpERym-2Gsy99W1EIG3s1j0fe27IBNlugquXRoXmCdjIQxJvosAITf97vEc");'></div>
+<div class="flex flex-col">
+<p class="text-text-light dark:text-white text-sm font-medium leading-normal">octocat-dev</p>
+<p class="text-gray-600 dark:text-text-secondary-dark text-xs font-normal leading-normal">user@email.com</p>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<main class="flex-1 p-6 md:p-10 overflow-y-auto">
+<div class="max-w-4xl mx-auto">
+<div class="flex flex-wrap justify-between gap-3 mb-8">
+<h1 class="text-text-light dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Profile Settings</h1>
+</div>
+<div class="p-4 @container mb-8">
+<div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start bg-background-light dark:bg-panel-dark border border-gray-200/50 dark:border-white/10 shadow-lg">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl @xl:rounded-l-xl @xl:rounded-r-none @xl:max-w-xs" data-alt="Abstract visualization of code connections and data flow" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCwIPW7BPZRYq_zz_EQC9CLfs2rqRGLGUmUpK_H-tj6YGdfkUL9oXtAlAZ--b8sVnJIoFegmNfqtvjFwiWTQuI-qR82-jxqEGtxwAu3rpqX0GBivEevNcalZk60XlBPTt9Nyxue51nuuDKqOMDelpqZI7ukwm-nWRMLWBgoK9q1PmXbneHhwGzrE90NwrdN0JDgITSJHZZXozjcwN40Qfj3Y2wZMlCE73T24hk0wUoJLYRcd1yonCnTanmmvAkq9kflixOEMPPUJmw");'></div>
+<div class="flex w-full min-w-72 grow flex-col items-stretch justify-center gap-4 p-6">
+<p class="text-accent-purple text-lg font-bold leading-tight tracking-[-0.015em]">Stack Compatibility Breakdown</p>
+<div class="flex flex-col gap-4">
+<div class="flex flex-col gap-2">
+<div class="flex gap-6 justify-between items-center">
+<p class="text-text-light dark:text-white text-base font-medium leading-normal">Overall Compatibility</p>
+<p class="text-text-light dark:text-white text-sm font-bold leading-normal text-success">85%</p>
+</div>
+<div class="rounded-full bg-gray-200 dark:bg-[#3f3b54] h-2"><div class="h-2 rounded-full bg-success" style="width: 85%;"></div></div>
+<p class="text-gray-600 dark:text-text-secondary-dark text-sm font-normal leading-normal">High probability of a successful merge.</p>
+</div>
+<div class="flex flex-col gap-2">
+<div class="flex gap-6 justify-between items-center">
+<p class="text-text-light dark:text-white text-base font-medium leading-normal">Semicolon Conflicts</p>
+<p class="text-text-light dark:text-white text-sm font-bold leading-normal text-warning">High</p>
+</div>
+<div class="rounded-full bg-gray-200 dark:bg-[#3f3b54] h-2"><div class="h-2 rounded-full bg-warning" style="width: 92%;"></div></div>
+<p class="text-gray-600 dark:text-text-secondary-dark text-sm font-normal leading-normal">High probability of conflict. Proceed with caution.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-8">
+<div class="pb-8 border-b border-gray-200/50 dark:border-white/10">
+<h2 class="text-xl font-bold text-text-light dark:text-white mb-1">Profile Details</h2>
+<p class="text-gray-600 dark:text-text-secondary-dark mb-6">This information will be displayed publicly so be careful what you share.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium text-gray-600 dark:text-text-secondary-dark mb-2 font-mono" for="github-handle">GitHub Handle</label>
+<input class="w-full bg-gray-100 dark:bg-background-dark border-gray-300 dark:border-white/20 rounded-lg focus:ring-primary focus:border-primary font-mono" id="github-handle" placeholder="octocat-dev" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-600 dark:text-text-secondary-dark mb-2 font-mono" for="preferred-ide">Preferred IDE</label>
+<select class="w-full bg-gray-100 dark:bg-background-dark border-gray-300 dark:border-white/20 rounded-lg focus:ring-primary focus:border-primary font-mono" id="preferred-ide">
+<option>VS Code</option>
+<option>JetBrains Suite</option>
+<option>Vim / Neovim</option>
+<option>Sublime Text</option>
+</select>
+</div>
+</div>
+<div class="mt-6">
+<label class="block text-sm font-medium text-gray-600 dark:text-text-secondary-dark mb-2 font-mono" for="bio">Bio</label>
+<textarea class="w-full bg-gray-100 dark:bg-background-dark border-gray-300 dark:border-white/20 rounded-lg focus:ring-primary focus:border-primary font-mono" id="bio" placeholder="echo 'Hello, World!';" rows="4"></textarea>
+</div>
+</div>
+<div class="pb-8 border-b border-gray-200/50 dark:border-white/10">
+<h2 class="text-xl font-bold text-text-light dark:text-white mb-1">Coding Style</h2>
+<p class="text-gray-600 dark:text-text-secondary-dark mb-6">The most important questions.</p>
+<div>
+<label class="block text-sm font-medium text-gray-600 dark:text-text-secondary-dark mb-3 font-mono">Tabs vs. Spaces</label>
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<input checked="" class="h-4 w-4 text-primary focus:ring-primary border-gray-300 dark:border-white/30 bg-gray-100 dark:bg-background-dark" id="tabs" name="indentation" type="radio"/>
+<label class="text-sm" for="tabs">Tabs</label>
+</div>
+<div class="flex items-center gap-2">
+<input class="h-4 w-4 text-primary focus:ring-primary border-gray-300 dark:border-white/30 bg-gray-100 dark:bg-background-dark" id="spaces" name="indentation" type="radio"/>
+<label class="text-sm" for="spaces">Spaces</label>
+</div>
+</div>
+</div>
+</div>
+<div class="pb-8">
+<h2 class="text-xl font-bold text-text-light dark:text-white mb-1">Notifications</h2>
+<p class="text-gray-600 dark:text-text-secondary-dark mb-6">We'll always let you know about important changes, but you pick what else you want to hear about.</p>
+<div class="space-y-4">
+<div class="flex items-center justify-between p-4 rounded-lg bg-gray-100 dark:bg-panel-dark border border-gray-200/50 dark:border-white/10">
+<div>
+<p class="font-medium text-text-light dark:text-white">New Match</p>
+<p class="text-sm text-gray-600 dark:text-text-secondary-dark">When someone new matches with you.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-gray-300 dark:bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-4 rounded-lg bg-gray-100 dark:bg-panel-dark border border-gray-200/50 dark:border-white/10">
+<div>
+<p class="font-medium text-text-light dark:text-white">Pull Request Received</p>
+<p class="text-sm text-gray-600 dark:text-text-secondary-dark">When you receive a match request.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-gray-300 dark:bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between p-4 rounded-lg bg-gray-100 dark:bg-panel-dark border border-gray-200/50 dark:border-white/10">
+<div>
+<p class="font-medium text-text-light dark:text-white">New Message</p>
+<p class="text-sm text-gray-600 dark:text-text-secondary-dark">When you receive a new message from a match.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-gray-300 dark:bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</div>
+<div class="flex justify-end pt-6">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] gap-2 hover:bg-primary/90">
+<span class="material-symbols-outlined text-base">upload</span>
+<span class="truncate font-mono">git commit -m "Update profile"</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

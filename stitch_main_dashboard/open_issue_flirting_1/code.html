@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>New Flirt Issue</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+      .font-code {
+        font-family: "JetBrains Mono", monospace;
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3713ec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#131022",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<script defer="" src="../sidebar.js"></script>
+</head>
+<body class="font-display" data-page="open-issue">
+<div class="relative flex min-h-screen w-full flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-8 md:px-16 lg:px-24 xl:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col w-full max-w-6xl flex-1">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-4 sm:px-6 md:px-10 py-3">
+<div class="flex items-center gap-3 text-white">
+<h1 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] font-code">&lt;Git Together&gt;</h1>
+</div>
+<button class="flex items-center justify-center rounded-lg h-10 w-10 text-white/70 hover:text-white hover:bg-white/10">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+</header>
+<main class="flex flex-col md:flex-row gap-8 px-4 sm:px-6 md:px-10 py-8">
+<div class="flex-grow">
+<div class="flex items-center gap-4 bg-[#131022] px-4 min-h-14 border-b border-white/10 pb-4 mb-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-10 w-10" data-alt="Avatar of Sarah" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBNgYDRXEIqpMlZzLa3oBMVTrin6XzCJWi-OBqyvflGSzvZchxEw-8CaAqBSwJLHt0QdGBN0PU3z1OyDkhJH66kfPBsO84COpWPGXD2B4P_0G087jlQMQ_N9wIbgLLAjTFa40YW021OXqfdCq3iVc78P1JNo-ppcm6YGsJHNDsF5a_O4WuV9_tRiwKLqPEyVve_2aCrQmHcuSZg_vkCQhfBor5jWGEYKSrZY4Y5_jx4iiMPzSyyuLlQJKUy-auakwtVl2bfh-5Nmo0");'></div>
+<p class="text-white text-base font-medium leading-normal flex-1 truncate">File a Bug Report with Sarah</p>
+</div>
+<div class="flex flex-col gap-6">
+<label class="flex flex-col w-full">
+<p class="text-white text-base font-medium leading-normal pb-2">Title</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#3f3b54] bg-[#1d1c27] focus:border-primary h-14 placeholder:text-[#a19db9] p-[15px] text-base font-normal leading-normal" placeholder="e.g., My UI is broken without you" value=""/>
+</label>
+<label class="flex flex-col w-full">
+<p class="text-white text-base font-medium leading-normal pb-2">Choose a template</p>
+<select class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#3f3b54] bg-[#1d1c27] focus:border-primary h-14 p-[15px] text-base font-normal leading-normal appearance-none bg-no-repeat bg-right" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD5aMZnZm7Y2uHM1_09Aha2HccerhO3PAkuS2imn3Rr2qrIxaOW1jm-RUZ5EJgQt9w1cRNhDrJh6KQSKB5DjmQQXsQDDspFwtycaLDhrWGlGMMCIAVnDl0MkzuTqQVXLYtPz1X-CAloAjwZ1a2R7Wo7CudDpYa9p87TyZHgLW9NV-yhOvRhxHQuLELITOmj67HTuqMMXPCxQ65ydbABZRnhBBojmUKCe4hb1LOdmepM-PvJhAiYV-dfwUGp67sb4nhIzzEo7MKJd_I'); background-position: right 0.75rem center; background-size: 1.5em 1.5em;">
+<option value="bug">Bug Report</option>
+<option value="feature">Feature Request</option>
+<option value="compliment">Compliment</option>
+</select>
+</label>
+<label class="flex flex-col w-full">
+<div class="flex items-center justify-between pb-2">
+<p class="text-white text-base font-medium leading-normal">Leave a comment</p>
+<div class="flex items-center gap-2 text-sm text-white/60">
+<button class="px-3 py-1 rounded-md border border-transparent hover:border-white/20 hover:bg-white/10">Write</button>
+<button class="px-3 py-1 rounded-md border border-transparent hover:border-white/20 hover:bg-white/10">Preview</button>
+</div>
+</div>
+<textarea class="form-input font-code flex w-full min-w-0 flex-1 resize-y overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#3f3b54] bg-[#1d1c27] focus:border-primary min-h-60 placeholder:text-[#a19db9] p-[15px] text-base font-normal leading-relaxed">### Describe the bug
+A clear and concise description of what the bug is.
+### Steps to Reproduce the Feeling
+1. Go to '...'
+2. Click on '....'
+3. Scroll down to '....'
+4. See error
+### Expected Behavior
+A clear and concise description of what you expected to happen.
+### Additional Context
+Add any other pickup lines or context about the problem here.
+                                    </textarea>
+</label>
+<div class="flex items-center justify-end gap-3 mt-4">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-transparent text-white/80 hover:bg-white/10 hover:text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-4">
+                                        Cancel
+                                    </button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-green-600 hover:bg-green-500 text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-5">
+<span class="material-symbols-outlined text-xl">check_circle</span>
+<span>Commit Flirt</span>
+</button>
+</div>
+</div>
+</div>
+<aside class="w-full md:w-64 lg:w-72 flex-shrink-0">
+<div class="flex flex-col gap-6 p-4 rounded-lg border border-white/10 bg-[#1d1c27]/50 sticky top-8">
+<div class="flex flex-col gap-2">
+<p class="text-white/60 text-sm font-medium">Assignees</p>
+<div class="flex items-center gap-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-6 w-6" data-alt="Avatar of user" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD1WpRdfpd_NjWIoN7bfLlhtUfhZuyJYPzKsA0N5jOXFfaRodFscQTXTN0HqODRuzRyvGo1pVgFrMFd9UC34lenjQo8qfH8dKx6TIJKxdbM6yad5bvBHt1q5sDHMj8BuGOY_birLvsF3Knz8Beh81F9H7IH_QASu8xAAJF3zJQjY9yzsWfgajHVi5orjBgeLbMnvithA9izCzgYLMosTnQHkho6gMcXcKZg2zeKvjSCHnj3SCXu9AV74CxhPPGxiCF-76d99Toz78s");'></div>
+<p class="text-white text-sm font-normal">You</p>
+</div>
+<div class="flex items-center gap-2">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-6 w-6" data-alt="Avatar of Sarah" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBdYUJu-8JIOfsB8N0if1KjGKm662FRcW0PUpYtceH30e5kWmQ3R4cYlGpN5D0M9JMzp-rmkRM6j9mk6IIMhj49uQ2QW1p0JgOI5V4-LCpfEA62f3s7a6cp6FcInHqT6UWPVmKJ18LK4t__Vu2PMIAfza-U_LNjQC2K1s2Fwn4wItYBaR3DeR2ouGHy-N5Az-RF5tjrnnH2WVnIDHCUADS2Vr1AwIITjyRniLXfEJjiipmbMlJpttAWixsaA_UQFXAsziIvhSt_aU");'></div>
+<p class="text-white text-sm font-normal">Sarah</p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<p class="text-white/60 text-sm font-medium">Labels</p>
+<div class="flex flex-wrap gap-2">
+<span class="inline-flex items-center rounded-full bg-blue-500/20 px-3 py-1 text-xs font-medium text-blue-300">bug</span>
+<span class="inline-flex items-center rounded-full bg-purple-500/20 px-3 py-1 text-xs font-medium text-purple-300">question</span>
+<span class="inline-flex items-center rounded-full bg-red-500/20 px-3 py-1 text-xs font-medium text-red-300">high-priority</span>
+<span class="inline-flex items-center rounded-full bg-green-500/20 px-3 py-1 text-xs font-medium text-green-300">good-first-issue</span>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<p class="text-white/60 text-sm font-medium">Priority</p>
+<select class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border border-[#3f3b54] bg-[#1d1c27] focus:border-primary h-10 text-sm p-2 appearance-none bg-no-repeat bg-right" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD5aMZnZm7Y2uHM1_09Aha2HccerhO3PAkuS2imn3Rr2qrIxaOW1jm-RUZ5EJgQt9w1cRNhDrJh6KQSKB5DjmQQXsQDDspFwtycaLDhrWGlGMMCIAVnDl0MkzuTqQVXLYtPz1X-CAloAjwZ1a2R7Wo7CudDpYa9p87TyZHgLW9NV-yhOvRhxHQuLELITOmj67HTuqMMXPCxQ65ydbABZRnhBBojmUKCe4hb1LOdmepM-PvJhAiYV-dfwUGp67sb4nhIzzEo7MKJd_I'); background-position: right 0.5rem center; background-size: 1.25em 1.25em;">
+<option value="low">Low</option>
+<option value="medium">Medium</option>
+<option selected="" value="high">High</option>
+<option value="urgent">Urgent</option>
+</select>
+</div>
+</div>
+</aside>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>

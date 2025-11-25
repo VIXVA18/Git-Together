@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Git Together - Discover Repositories</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Fira+Code:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3713ec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#131022",
+              "accent-green": "#238636",
+              "accent-magenta": "#db61a2",
+              "surface-dark": "#201c34",
+              "surface-light": "#eef0f2",
+              "subtle-dark": "#36324a",
+              "subtle-light": "#d8dce2",
+              "text-light-primary": "#1f2937",
+              "text-dark-primary": "#f9fafb",
+              "text-light-secondary": "#6b7280",
+              "text-dark-secondary": "#a19db9",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"],
+              "mono": ["Fira Code", "monospace"],
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light-primary dark:text-text-dark-primary">
+<div class="relative flex h-auto min-h-screen w-full flex-col">
+<div class="flex h-full min-h-screen w-full">
+<aside class="flex w-64 flex-col gap-8 border-r border-subtle-light dark:border-subtle-dark bg-background-light dark:bg-background-dark p-4">
+<div class="flex items-center gap-2 px-2">
+<h1 class="font-bold text-xl font-mono text-text-light-primary dark:text-text-dark-primary">Git Together</h1>
+</div>
+<div class="flex h-full flex-col justify-between">
+          <div class="flex flex-col gap-2">
+            <a class="flex cursor-pointer items-center gap-3 rounded-lg bg-primary/20 px-3 py-2" href="./index.html">
+              <span class="material-symbols-outlined text-primary">home</span>
+              <p class="text-sm font-medium text-primary">Dashboard</p>
+            </a>
+            <a class="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2 hover:bg-black/10 dark:hover:bg-white/10" href="./stitch_main_dashboard/pr_date_proposal_1/code.html">
+              <span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">rebase</span>
+              <p class="text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary">Pull Requests</p>
+            </a>
+            <a class="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2 hover:bg-black/10 dark:hover:bg-white/10" href="./stitch_main_dashboard/pair-programming_speed_dating_1/code.html">
+              <span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">fork_right</span>
+              <p class="text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary">Pair Programming</p>
+            </a>
+            <a class="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2 hover:bg-black/10 dark:hover:bg-white/10" href="./stitch_main_dashboard/open_issue_flirting_1/code.html">
+              <span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">bug_report</span>
+              <p class="text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary">Open Issue Flirting</p>
+            </a>
+            <a class="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2 hover:bg-black/10 dark:hover:bg-white/10" href="./stitch_main_dashboard/user_profile_1/code.html">
+              <span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">person</span>
+              <p class="text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary">Profile</p>
+            </a>
+            <a class="flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2 hover:bg-black/10 dark:hover:bg-white/10" href="./stitch_main_dashboard/settings/compatibility_breakdown_1/code.html">
+              <span class="material-symbols-outlined text-text-light-secondary dark:text-text-dark-secondary">settings</span>
+              <p class="text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary">Stack Compatibility</p>
+            </a>
+          </div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-4 border-t border-subtle-light dark:border-subtle-dark pt-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User avatar of git-user" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA9nouSPUfFz4sr7L6QA9gs7m_OsusDuhV9hDQ1ZwSoCDL2hT7GlEt-2Cvg5qXb2AYxzgSSZI6LuXFZ-Ud_ztMPmrda0T4I_mM6Cuhp6GwRA01wJcBiBTYNeWmLTUVSMtNLvsHS6T4vHuHpE_Ph9OeNvuZrXM_4Ps9HmSpx__QRncBaQk-dfI_pldHDc4BhcaXj_AIBzE7SuMCodfhqM6Uli05yrmu5VIcn0cNlREFgbDP3IRr6IAnbJIvUlOP2TomzWktVUVtXRkM");'></div>
+<div class="flex flex-col">
+<h1 class="text-base font-medium leading-normal text-text-light-primary dark:text-text-dark-primary">git-user</h1>
+<p class="text-sm font-normal leading-normal text-text-light-secondary dark:text-text-dark-secondary">Online</p>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<main class="flex-1 overflow-y-auto p-6 lg:p-10">
+<div class="mx-auto max-w-4xl">
+<header class="mb-8">
+<div class="flex flex-wrap items-center justify-between gap-4">
+<p class="text-4xl font-black leading-tight tracking-[-0.033em] text-text-light-primary dark:text-text-dark-primary min-w-72">Explore Repositories</p>
+<div class="w-full max-w-md">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-text-light-secondary dark:text-text-dark-secondary flex border border-subtle-light dark:border-subtle-dark border-r-0 bg-surface-light dark:bg-surface-dark items-center justify-center pl-4 rounded-l-lg">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-text-light-primary dark:text-text-dark-primary focus:outline-0 focus:ring-2 focus:ring-primary border border-subtle-light dark:border-subtle-dark bg-surface-light dark:bg-surface-dark h-full placeholder:text-text-light-secondary dark:placeholder:text-text-dark-secondary px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal font-mono" placeholder="Filter by language, location, or tech..." value=""/>
+</div>
+</label>
+</div>
+</div>
+</header>
+        <div class="flex flex-col gap-6">
+          <section class="mb-4 rounded-xl border border-subtle-light dark:border-subtle-dark bg-surface-light dark:bg-surface-dark p-6">
+            <div class="flex flex-wrap items-center justify-between gap-4">
+              <div>
+                <p class="text-base font-semibold text-text-light-secondary dark:text-text-dark-secondary uppercase tracking-[0.2em] font-mono">Feature Shortcuts</p>
+                <h2 class="text-2xl font-bold text-text-light-primary dark:text-text-dark-primary">Jump into your favorite Git Together flows</h2>
+              </div>
+              <a class="inline-flex items-center gap-2 rounded-full border border-subtle-light dark:border-subtle-dark px-4 py-2 text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary hover:bg-black/5 dark:hover:bg-white/5" href="./stitch_main_dashboard/settings/compatibility_breakdown_1/code.html">
+                <span class="material-symbols-outlined text-base">explore</span>
+                View All
+              </a>
+            </div>
+            <div class="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2">
+              <a class="flex flex-col gap-3 rounded-lg border border-primary/30 bg-primary/10 p-4 hover:bg-primary/20 transition-colors" href="./stitch_main_dashboard/open_issue_flirting_1/code.html">
+                <div class="flex items-center gap-2 text-primary">
+                  <span class="material-symbols-outlined">bug_report</span>
+                  <p class="font-semibold font-mono">Open Issue Flirting</p>
+                </div>
+                <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">File a playful bug report, select templates, and leave markdown comments.</p>
+                <span class="text-sm font-semibold text-primary">Launch →</span>
+              </a>
+              <a class="flex flex-col gap-3 rounded-lg border border-subtle-light dark:border-subtle-dark bg-background-light/70 dark:bg-background-dark/40 p-4 hover:bg-background-light dark:hover:bg-background-dark transition-colors" href="./stitch_main_dashboard/pair-programming_speed_dating_1/code.html">
+                <div class="flex items-center gap-2 text-accent-magenta">
+                  <span class="material-symbols-outlined">terminal</span>
+                  <p class="font-semibold font-mono">Pair-Programming Speed Dating</p>
+                </div>
+                <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Start the 10-min coding challenge, chat live, and track collaboration score.</p>
+                <span class="text-sm font-semibold text-accent-magenta">Launch →</span>
+              </a>
+              <a class="flex flex-col gap-3 rounded-lg border border-subtle-light dark:border-subtle-dark bg-background-light/70 dark:bg-background-dark/40 p-4 hover:bg-background-light dark:hover:bg-background-dark transition-colors" href="./stitch_main_dashboard/pr_date_proposal_1/code.html">
+                <div class="flex items-center gap-2 text-accent-green">
+                  <span class="material-symbols-outlined">merge_type</span>
+                  <p class="font-semibold font-mono">PR Date Proposal</p>
+                </div>
+                <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Submit a date pull request, review commits, and merge or close proposals.</p>
+                <span class="text-sm font-semibold text-accent-green">Launch →</span>
+              </a>
+              <a class="flex flex-col gap-3 rounded-lg border border-subtle-light dark:border-subtle-dark bg-background-light/70 dark:bg-background-dark/40 p-4 hover:bg-background-light dark:hover:bg-background-dark transition-colors" href="./stitch_main_dashboard/settings/compatibility_breakdown_1/code.html">
+                <div class="flex items-center gap-2 text-accent-magenta">
+                  <span class="material-symbols-outlined">warning</span>
+                  <p class="font-semibold font-mono">Stack Compatibility Breakdown</p>
+                </div>
+                <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Check humorous alerts like semicolon conflicts and tune your relationship settings.</p>
+                <span class="text-sm font-semibold text-accent-magenta">Launch →</span>
+              </a>
+              <a class="flex flex-col gap-3 rounded-lg border border-subtle-light dark:border-subtle-dark bg-background-light/70 dark:bg-background-dark/40 p-4 hover:bg-background-light dark:hover:bg-background-dark transition-colors" href="./stitch_main_dashboard/user_profile_1/code.html">
+                <div class="flex items-center gap-2 text-primary">
+                  <span class="material-symbols-outlined">account_tree</span>
+                  <p class="font-semibold font-mono">Commit History Timeline</p>
+                </div>
+                <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Browse README-style bios, relationship commits, clone profiles, and more.</p>
+                <span class="text-sm font-semibold text-primary">Launch →</span>
+              </a>
+              <a class="flex flex-col gap-3 rounded-lg border border-subtle-light dark:border-subtle-dark bg-background-light/70 dark:bg-background-dark/40 p-4 hover:bg-background-light dark:hover:bg-background-dark transition-colors" href="./stitch_main_dashboard/open_issue_flirting_2/code.html">
+                <div class="flex items-center gap-2 text-accent-green">
+                  <span class="material-symbols-outlined">chat</span>
+                  <p class="font-semibold font-mono">Commit-Style Replies</p>
+                </div>
+                <p class="text-sm text-text-light-secondary dark:text-text-dark-secondary">Experiment with predefined templates and comment threads in alternate layouts.</p>
+                <span class="text-sm font-semibold text-accent-green">Launch →</span>
+              </a>
+            </div>
+          </section>
+<div class="flex flex-col gap-4 rounded-xl border border-subtle-light dark:border-subtle-dark bg-surface-light dark:bg-surface-dark p-6">
+<div class="flex flex-col gap-4 md:flex-row md:items-start">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-20 shrink-0" data-alt="User avatar of octocat-dev" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAWcc43sP-chSCcl2lczO5odvPy6WtkYEpGNJQP4L3lND_aUmzzDnZmLrQdReK5r14WmPWOpWnRbhmt1SsxBiUacgMl7_rMMkyx1qjG1SAlCwAoFAcmjF-9Fc3TmszbqDY87gZG13pxIfW-bRApPIgYfR2q-xZ5Nk2Uc_uZs83iMmGqZRedDtN5qf6cNVgZZzcXZyXS7yHQmvsv7rpiGmNNg88SDLqZClSlb1qfvxx73z1PRsjNXy5jCjSpL7ttlH2ww-M4AoWIoVE");'></div>
+<div class="flex w-full flex-col gap-3">
+<div class="flex flex-wrap items-baseline justify-between gap-2">
+<div>
+<p class="text-xl font-bold leading-tight tracking-[-0.015em] text-text-light-primary dark:text-text-dark-primary">octocat-dev, 28</p>
+<p class="text-sm font-normal leading-normal text-text-light-secondary dark:text-text-dark-secondary">San Francisco, CA</p>
+</div>
+<div class="flex items-center gap-4 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-base">star</span> 1.2k</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-base">fork_right</span> 312</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-base">commit</span> 540</div>
+</div>
+</div>
+<div class="flex gap-2 flex-wrap">
+<div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full border border-yellow-500/50 bg-yellow-500/10 px-3"><p class="text-sm font-medium leading-normal text-yellow-400 font-mono">JavaScript</p></div>
+<div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full border border-orange-500/50 bg-orange-500/10 px-3"><p class="text-sm font-medium leading-normal text-orange-400 font-mono">Rust</p></div>
+<div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full border border-cyan-500/50 bg-cyan-500/10 px-3"><p class="text-sm font-medium leading-normal text-cyan-400 font-mono">React</p></div>
+</div>
+<div class="text-base font-normal leading-relaxed text-text-light-secondary dark:text-text-dark-secondary space-y-1 font-mono">
+<p>&gt; Building the future with Rust</p>
+<p>&gt; A short, personal bio, styled like a README.md preview. I enjoy long walks on the beach and refactoring legacy codebases for fun.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-stretch gap-4 sm:flex-row sm:items-center sm:justify-end">
+<button class="flex h-10 items-center justify-center gap-2 rounded-lg bg-text-light-secondary/10 dark:bg-text-dark-secondary/10 px-4 text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary hover:bg-text-light-secondary/20 dark:hover:bg-text-dark-secondary/20">Ignore</button>
+<button class="flex h-10 items-center justify-center gap-2 rounded-lg bg-primary/20 px-4 text-sm font-medium text-primary hover:bg-primary/30">
+<span class="material-symbols-outlined text-base">fork_right</span> Fork Conversation
+                            </button>
+<button class="flex h-10 items-center justify-center gap-2 rounded-lg bg-accent-green px-4 text-sm font-medium text-white hover:bg-accent-green/90">
+<span class="material-symbols-outlined text-base">content_copy</span> Clone Profile
+                            </button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-subtle-light dark:border-subtle-dark bg-surface-light dark:bg-surface-dark p-6">
+<div class="flex flex-col gap-4 md:flex-row md:items-start">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-20 shrink-0" data-alt="User avatar of pixel-pioneer" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB3MLTB1BtZZluuVBnBQPJnEZJUVudVzt93LIsPeqIUhYAEspg0SJiwzjTRzrmWBr8bEid7FXnhyDmNWV9NPhRUo7t0jaLQ_h54GukwhfPaz046XsOVVvJB500WbIFWz0VhyWB0biFJFX5gMQfGhR0aHcQOC3yCLBSC2q1eBw2d1N9zPTLmcdNps-dVm71QlxPRcxNGDyehZNiqg-fCvX4SYNbFXTc8PwKqbnPtikX3yVn6e5RodawxZ0KqVv_3tvTPkF1sq6tF5dY");'></div>
+<div class="flex w-full flex-col gap-3">
+<div class="flex flex-wrap items-baseline justify-between gap-2">
+<div>
+<p class="text-xl font-bold leading-tight tracking-[-0.015em] text-text-light-primary dark:text-text-dark-primary">pixel-pioneer, 25</p>
+<p class="text-sm font-normal leading-normal text-text-light-secondary dark:text-text-dark-secondary">Berlin, Germany</p>
+</div>
+<div class="flex items-center gap-4 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-base">star</span> 2.5k</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-base">fork_right</span> 89</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-base">commit</span> 812</div>
+</div>
+</div>
+<div class="flex gap-2 flex-wrap">
+<div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full border border-purple-500/50 bg-purple-500/10 px-3"><p class="text-sm font-medium leading-normal text-purple-400 font-mono">Figma</p></div>
+<div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full border border-pink-500/50 bg-pink-500/10 px-3"><p class="text-sm font-medium leading-normal text-pink-400 font-mono">CSS</p></div>
+<div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full border border-green-500/50 bg-green-500/10 px-3"><p class="text-sm font-medium leading-normal text-green-400 font-mono">Vue.js</p></div>
+</div>
+<div class="text-base font-normal leading-relaxed text-text-light-secondary dark:text-text-dark-secondary space-y-1 font-mono">
+<p>&gt; Crafting beautiful UIs and pushing pixels.</p>
+<p>&gt; Passionate about design systems, accessibility, and creating intuitive user experiences. Coffee and clean code are my fuel.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-stretch gap-4 sm:flex-row sm:items-center sm:justify-end">
+<button class="flex h-10 items-center justify-center gap-2 rounded-lg bg-text-light-secondary/10 dark:bg-text-dark-secondary/10 px-4 text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary hover:bg-text-light-secondary/20 dark:hover:bg-text-dark-secondary/20">Ignore</button>
+<button class="flex h-10 items-center justify-center gap-2 rounded-lg bg-primary/20 px-4 text-sm font-medium text-primary hover:bg-primary/30">
+<span class="material-symbols-outlined text-base">fork_right</span> Fork Conversation
+                            </button>
+<button class="flex h-10 items-center justify-center gap-2 rounded-lg bg-accent-green px-4 text-sm font-medium text-white hover:bg-accent-green/90">
+<span class="material-symbols-outlined text-base">content_copy</span> Clone Profile
+                            </button>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-subtle-light dark:border-subtle-dark bg-surface-light dark:bg-surface-dark p-6">
+<div class="flex flex-col gap-4 md:flex-row md:items-start">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-20 shrink-0" data-alt="User avatar of data-whisperer" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD04cR7coWYvSmQ96VnTSJ8xTaWIAh1ow0i2fefOOu--BDFyQKFxm-FqEWuak9PjcdzIMRGFuHZwNTDrPiFHp8XFlg14waxZjDxBW4yxf4k-311L__Zl9wTzNl3-uSXsZFWLthAkvpPZKxs4fgjQ473d95g7qMdc_5ZBIzgSIUJCEEBfjLcIbvEwXmjyRNipVWdyfsirKS9jd1zeu5TGS96lrYgYEWb9nTsHYRlMJxYZ8oLL7dxdPf-k_qeSLb5uCNl17PhmCsHyAI");'></div>
+<div class="flex w-full flex-col gap-3">
+<div class="flex flex-wrap items-baseline justify-between gap-2">
+<div>
+<p class="text-xl font-bold leading-tight tracking-[-0.015em] text-text-light-primary dark:text-text-dark-primary">data-whisperer, 31</p>
+<p class="text-sm font-normal leading-normal text-text-light-secondary dark:text-text-dark-secondary">Austin, TX</p>
+</div>
+<div class="flex items-center gap-4 text-sm text-text-light-secondary dark:text-text-dark-secondary">
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-base">star</span> 980</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-base">fork_right</span> 150</div>
+<div class="flex items-center gap-1"><span class="material-symbols-outlined text-base">commit</span> 420</div>
+</div>
+</div>
+<div class="flex gap-2 flex-wrap">
+<div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full border border-blue-500/50 bg-blue-500/10 px-3"><p class="text-sm font-medium leading-normal text-blue-400 font-mono">Python</p></div>
+<div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full border border-red-500/50 bg-red-500/10 px-3"><p class="text-sm font-medium leading-normal text-red-400 font-mono">PyTorch</p></div>
+<div class="flex h-7 shrink-0 items-center justify-center gap-x-2 rounded-full border border-teal-500/50 bg-teal-500/10 px-3"><p class="text-sm font-medium leading-normal text-teal-300 font-mono">SQL</p></div>
+</div>
+<div class="text-base font-normal leading-relaxed text-text-light-secondary dark:text-text-dark-secondary space-y-1 font-mono">
+<p>&gt; Training models and wrangling data.</p>
+<p>&gt; Data Scientist specializing in NLP. My ideal date is analyzing interesting datasets. Let's build a recommendation engine together.</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-stretch gap-4 sm:flex-row sm:items-center sm:justify-end">
+<button class="flex h-10 items-center justify-center gap-2 rounded-lg bg-text-light-secondary/10 dark:bg-text-dark-secondary/10 px-4 text-sm font-medium text-text-light-secondary dark:text-text-dark-secondary hover:bg-text-light-secondary/20 dark:hover:bg-text-dark-secondary/20">Ignore</button>
+<button class="flex h-10 items-center justify-center gap-2 rounded-lg bg-primary/20 px-4 text-sm font-medium text-primary hover:bg-primary/30">
+<span class="material-symbols-outlined text-base">fork_right</span> Fork Conversation
+                            </button>
+<button class="flex h-10 items-center justify-center gap-2 rounded-lg bg-accent-green px-4 text-sm font-medium text-white hover:bg-accent-green/90">
+<span class="material-symbols-outlined text-base">content_copy</span> Clone Profile
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

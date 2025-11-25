@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>GitMingle Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#3713ec",
+              "background-light": "#f6f6f8",
+              "background-dark": "#131022",
+            },
+            fontFamily: {
+              "display": ["Space Grotesk", "sans-serif"],
+              "mono": ["JetBrains Mono", "monospace"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<script defer="" src="../sidebar.js"></script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display" data-page="profile">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-[#131022] dark group/design-root overflow-x-hidden" style='font-family: "Space Grotesk", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<div class="px-4 sm:px-10 md:px-20 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1 gap-8">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#2b2839] px-4 sm:px-10 py-3">
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-3xl" style="color: #16a34a;">spark</span>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] font-mono">Git Together</h2>
+</div>
+<div class="flex flex-1 justify-end gap-2 sm:gap-4">
+<div class="flex gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#2b2839] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-white text-xl">notifications</span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#2b2839] text-white gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-white text-xl">settings</span>
+</button>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="User profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCDdttuivduLfmP0HUGXnGEzy8woM3HlQ4lcOwkOOQ-1MySTnm-SX_FFNZWH9hoXuY3gpNjn8D329b8iLC5PkDvYWcupH037049t4RQOd9l2DwHAboFdH3H-wzn46-HEVCjr2vZAeysDBdp3JZhMsXlIoo6wCHZ2paXFg1e8v59GYVVEmYDNQr4KC-NVeaR4RbuT7MROnPNgT_dPHQ6wRpM9jEJhV9Yd2rSwmrc1WltRaZ6NpAZFztGmKBv2qa3l-pQwONpdmuTQb8");'></div>
+</div>
+</header>
+<div class="flex p-4 @container">
+<div class="flex w-full flex-col gap-6 items-center">
+<div class="flex gap-4 flex-col items-center">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32 border-4 border-primary" data-alt="Profile picture of Jane Doe" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDKJZQGFsySBrFuQIjt-c5Db6X8OLFzem9XBdGmPuU6NkJAJHHhD70PtS3hlorw4aZYtWgYjsG2tZWoUJJhDvY9v6X2Q3ehhVXh7ZjO34BXyUClw_35CZuT-N_IJccG2SU_JYS51wJrEqNvbjvld_9bvgChhFsN8tpuaLFbSLuqKcIzNBWTpQAyKw5nFMQVogAVwE8rY8ugnyBi9XeXufo1fUP15UKZFV7s12EINaxVMgw0uC9VDtJKMR-gAREmPXG4kybHD2y4Q1o");'></div>
+<div class="flex flex-col items-center justify-center">
+<p class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] text-center font-mono">@jane-dev</p>
+<p class="text-[#a19db9] text-base font-normal leading-normal text-center">Jane Doe</p>
+<p class="text-[#a19db9] text-base font-normal leading-normal text-center">Senior Frontend Engineer @ MergeMasters</p>
+<p class="text-[#a19db9] text-base font-normal leading-normal text-center">San Francisco, CA</p>
+</div>
+</div>
+<div class="flex w-full max-w-[480px] gap-3 @[480px]:w-auto">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#2b2839] text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto hover:bg-[#3f3b54] transition-colors gap-2 font-mono">
+<span class="material-symbols-outlined text-base">call_merge</span>
+<span class="truncate">git merge</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto hover:opacity-90 transition-opacity gap-2 font-mono">
+<span class="material-symbols-outlined text-base">rocket_launch</span>
+<span class="truncate">git push --force</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4 border-b border-[#2b2839] font-mono">Stack Compatibility</h3>
+<div class="flex flex-col gap-3 p-4">
+<div class="flex gap-6 justify-between items-center">
+<p class="text-white text-base font-medium leading-normal">Overall Match</p>
+<p class="text-white text-sm font-normal leading-normal">85%</p>
+</div>
+<div class="rounded-full bg-[#3f3b54] h-2.5">
+<div class="h-2.5 rounded-full bg-primary" style="width: 85%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-3 p-4">
+<div class="flex gap-6 justify-between items-center">
+<p class="text-white text-base font-medium leading-normal">Languages &amp; Frameworks</p>
+<p class="text-white text-sm font-normal leading-normal">92%</p>
+</div>
+<div class="rounded-full bg-[#3f3b54] h-2.5">
+<div class="h-2.5 rounded-full bg-primary/80" style="width: 92%;"></div>
+</div>
+</div>
+<div class="flex flex-col gap-3 p-4">
+<div class="flex gap-6 justify-between items-center">
+<p class="text-white text-base font-medium leading-normal">Tools &amp; Platforms</p>
+<p class="text-white text-sm font-normal leading-normal">78%</p>
+</div>
+<div class="rounded-full bg-[#3f3b54] h-2.5">
+<div class="h-2.5 rounded-full bg-primary/60" style="width: 78%;"></div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4 border-b border-[#2b2839] font-mono">README.md</h3>
+<div class="p-4 bg-[#211e33] rounded-lg border border-[#2b2839]">
+<p class="text-[#a19db9] text-base font-normal leading-relaxed font-mono whitespace-pre-wrap">
+# About Me
+Senior Frontend Engineer with a passion for clean code, pixel-perfect UIs, and robust state management. Currently building the future of collaboration at MergeMasters.
+When I'm not wrangling `useEffect` hooks, you can find me hiking in the Bay Area, brewing the perfect cup of coffee, or contributing to open-source projects.
+## What I'm looking for
+A partner-in-code to debug life's challenges with. Someone who appreciates a good refactor, is willing to pair-program on a weekend project, and doesn't mind debating the merits of tabs vs. spaces.
+Let's `git checkout` a coffee branch and see if we can `git merge` our futures.
+                            </p>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4 border-b border-[#2b2839] font-mono">Repositories of Interest</h3>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(158px,1fr))] gap-3 p-4">
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="A person hiking on a mountain trail with a sunset in the background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAEdNs1PFk2wrUWqftHEyuR844GBvhZLiAeLr-8awk_cs2DD510XD1lB-K7azcmaglK0mWcQMf4WNh7yUbZCkW_IuDw-b2s8YNTN96IHdUA9k-aovURTvtFu0QsmHfB3qO1nJWxburTkKovZ0N49-Ca8PvdLFJBCfOlN0VPfT3RTg-HoKtOSofYemdjOypIXfZEs7Z35r6mTaYapjD3u3lt-VNfvpEancvzB8EaiXYRiBUEbHpxRj1Wz7qXSm37vwvsFd0EMdIFqX0");'></div>
+<p class="text-center text-sm text-[#a19db9] font-mono">repo: hiking</p>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Close-up of a person playing a video game on a controller" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_ql3tK3yHJfYSfp5XSAEnFqWwLRcACy_S55SzfwXSX08zUFzgs8h1FGNfswqQk-_XX615lAtIUyAIM-azeI6hhcc3f4XEauVnhHQMuG2NUG482R-zVzLoLSuynh8BBEdTzq9ijqHNv2PasgkdL8l7y2XaAeLqYl2c8ei_RWhqOQJMnL9AKqmjlkzvoYiA4UoUFkPPAtuJDpbjmM2xaoiGw2Mjz4WHGIC_u9PdSlLvWNUswhu0Whi3UAhMDKbV3DgGjGIzi9kTHs0");'></div>
+<p class="text-center text-sm text-[#a19db9] font-mono">repo: gaming</p>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="Artisanal coffee being poured into a cup" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAv2JF9qJgzHARTayigrYKb67zfQ0T_4t1KR8dGI2h5G15_HaLjaOFmxFGEbNzQ4jY0aeZxFhizpc315NGRLg-1dMblYda2sEX0wgX5wOd7UshD5673cFzkfJJ0VI2XznHMcrbqw9zOboQdYMMw2PF-ckm-El2U3hH0rs6cTpyi_5pr8hVq2p7hVvplH9AcksrsgYXrnCSd6RU3A3MjXeTijqmSTXQ_2oaCVhFzvzpzyobRnmwi0ljaZlSSoSoBsX8tWfdBFHpCCMg");'></div>
+<p class="text-center text-sm text-[#a19db9] font-mono">repo: open-source-coffee</p>
+</div>
+<div class="flex flex-col gap-3">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" data-alt="A person coding on a laptop in a dimly lit room" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCiY49MsINsAWYJg_1GAhdbrNMZXc9C3zlDdzGch5lWV8XqugY-jJyuWlicXp5y7xy4eBo-1GYKNDnnQ2Qjm66Vmr4xV1fCu-Yw_GoXYJtATMihILw0cffMzzFATvgQRLzAvFAojHnIiMSsvWGPNTRjnc5yXlmhuiOnX1bNfiqIF9xX_cUMCMKCldzpj2Yc5Ij9apIZxnUmGht4Syele8MLxUsColW-R4uaN8UiLWRSznNXF2ylq8mQMgM9GxhaSPxPM1C7dGi5n00");'></div>
+<p class="text-center text-sm text-[#a19db9] font-mono">repo: side-projects</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4 border-b border-[#2b2839] font-mono">Commit History</h3>
+<div class="p-4 space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-[#3f3b54] before:to-transparent">
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-[#3f3b54] bg-[#211e33] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+<span class="material-symbols-outlined text-primary">work</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-[#211e33] p-4 rounded-lg border border-[#2b2839]">
+<p class="font-mono text-sm text-white">feat: Started new job @ MergeMasters</p>
+<time class="font-mono text-xs text-[#a19db9]">2023-05-10</time>
+</div>
+</div>
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-[#3f3b54] bg-[#211e33] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+<span class="material-symbols-outlined text-primary">flight_takeoff</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-[#211e33] p-4 rounded-lg border border-[#2b2839]">
+<p class="font-mono text-sm text-white">refactor: Moved to San Francisco</p>
+<time class="font-mono text-xs text-[#a19db9]">2022-08-01</time>
+</div>
+</div>
+<div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+<div class="flex items-center justify-center w-10 h-10 rounded-full border border-[#3f3b54] bg-[#211e33] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+<span class="material-symbols-outlined text-primary">school</span>
+</div>
+<div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-[#211e33] p-4 rounded-lg border border-[#2b2839]">
+<p class="font-mono text-sm text-white">build: Graduated with CS degree</p>
+<time class="font-mono text-xs text-[#a19db9]">2021-05-15</time>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h3 class="text-white text-lg font-bold leading-tight tracking-[-0.015em] px-4 pb-2 pt-4 border-b border-[#2b2839] font-mono">Open Issues</h3>
+<div class="px-4 space-y-4">
+<div class="bg-[#211e33] border border-[#2b2839] rounded-lg p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-green-400 mt-1">adjust</span>
+<div>
+<p class="font-mono text-white">Debate: Is `let` superior to `var`?</p>
+<span class="text-xs text-[#a19db9] font-mono">#1 opened by @jane-dev</span>
+</div>
+</div>
+<button class="flex items-center justify-center gap-2 h-9 px-4 rounded-lg bg-primary text-white text-sm font-bold font-mono hover:opacity-90 transition-opacity whitespace-nowrap">
+<span class="material-symbols-outlined text-base">add_comment</span>
+<span>Submit PR</span>
+</button>
+</div>
+<div class="bg-[#211e33] border border-[#2b2839] rounded-lg p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-green-400 mt-1">adjust</span>
+<div>
+<p class="font-mono text-white">Best way to center a div?</p>
+<span class="text-xs text-[#a19db9] font-mono">#2 opened by @jane-dev</span>
+</div>
+</div>
+<button class="flex items-center justify-center gap-2 h-9 px-4 rounded-lg bg-primary text-white text-sm font-bold font-mono hover:opacity-90 transition-opacity whitespace-nowrap">
+<span class="material-symbols-outlined text-base">add_comment</span>
+<span>Submit PR</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="sticky bottom-0 bg-[#131022]/80 backdrop-blur-sm border-t border-[#2b2839] p-4 md:hidden">
+<div class="flex justify-around items-center">
+<button class="flex flex-col items-center text-white gap-1">
+<span class="material-symbols-outlined">history</span>
+<span class="text-xs font-mono">git blame</span>
+</button>
+<button class="flex flex-col items-center text-white gap-1">
+<span class="material-symbols-outlined">forum</span>
+<span class="text-xs font-mono">checkout -b</span>
+</button>
+<button class="flex flex-col items-center text-white gap-1">
+<span class="material-symbols-outlined">bookmark</span>
+<span class="text-xs font-mono">Fork</span>
+</button>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
